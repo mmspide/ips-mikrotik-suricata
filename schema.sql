@@ -16,7 +16,7 @@ SET foreign_key_checks = 0;
                       `que_sig_name` varchar(256) COLLATE utf8_unicode_ci NOT NULL COMMENT 'The name of the signature that caused the block',
                       `que_sig_gid` int(10) NOT NULL COMMENT 'The signature group ID',
                       `que_sig_sid` int(10) NOT NULL COMMENT 'The signature ID',
-                      `que_event_timestamp` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00' COMMENT 'When the event was triggered',
+                      `que_event_timestamp` timestamp NOT NULL DEFAULT '2019-01-01 00:00:00' COMMENT 'When the event was triggered',
                       `que_processed` int(11) NOT NULL DEFAULT '0' COMMENT 'If this item has been processed (0=no, <>0=yes)',
                       PRIMARY KEY (`que_id`),
                       KEY `que_added` (`que_added`)
